@@ -88,10 +88,9 @@ main{
 @media (max-width: 750px){
     .App{
         width: 750px;
-        height: 100vh;
     }
     .App header{
-        width: 750px;
+        width: 100%;
     }
     .App header .content{
         display: flex;
@@ -106,10 +105,12 @@ main{
     main{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .App main .cart{
-        width: 100%;
-    }  
+        width: 90%;
+        margin: auto;
+    }
     .App main .products{
         width: 100%;
     }
@@ -120,16 +121,31 @@ main{
         flex-wrap: nowrap;
         overflow: auto;
     }
-    .App main .products{
-        width: 100%;
+
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo{
+        font-size: 1.8rem;
     }
-}
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo .productCategory{
+        font-size: 1.2rem;
+    }
+} 
 @media (max-width: 550px){
     .App main .cart{
-        width: 100%;
+        width: 90%;
+        margin: auto;
+    }
+    .App header .content .searchBox, .App header .content .searchBox input{
+        height: 80px;
+        font-size: 2rem;
     }
     .App header .content{
         width: 80%;
+    }
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo{
+        font-size: 1.8rem;
+    }
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo .productCategory{
+        font-size: 1.2rem;
     }
     /* .App header .content .searchBox button{
         position: relative;
@@ -138,14 +154,11 @@ main{
     .App header .content .searchBox input{
         width: 300px;
     }
-    .App main .products{
-        width: 100%;
-    }
-    .App main .products ul{
+    .App main .products, .App main .products ul{
         width: 100%;
     }
     .App main .products ul li{
-        width: 400px;
+        word-break: break-all;
     }
     .App main .cart .purchases .totalPrice .total, .App main .cart .purchases .totalPrice .finalPrice, .App main .cart .purchases .buttonRemoveAll button{
         font-size: 2rem;
@@ -156,14 +169,14 @@ main{
     .App main .products ul li .productsInfo .productCategory p, .App main .products ul li .productsInfo .productPrice p, .App main .products ul li .productsInfo button {
         font-size: 1.5rem;
     }
+    .App main .cart .purchases span:nth-child(1) .newProduct .productsSeparate .remove button{
+        font-size: 1.5rem;
+    }
 }
 
 @media (max-width: 400px){
     .App header .content .shopTitle h1 .burguer{
         font-size: 3rem;
-    }
-    .App main .cart, .App main .products{
-        width: 100%;
     }
     .App main .cart .purchases .totalPrice .total, .App main .cart .purchases .totalPrice .finalPrice, .App main .cart .purchases .buttonRemoveAll button{
         font-size: 2rem;
@@ -172,6 +185,42 @@ main{
         font-size: 2rem;
     }
     .App main .products ul li .productsInfo .productCategory p, .App main .products ul li .productsInfo .productPrice p, .App main .products ul li .productsInfo button {
+        font-size: 1.5rem;
+    }
+    .App main .cart{
+        width: 90%;
+        margin: auto;
+    }
+    .App main .products{
+        width: 100%;
+    }
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo{
+        font-size: 1.8rem;
+    }
+    .App .cart .purchases span:nth-child(1) .newProduct .productsSeparate .productsInfo .productCategory{
+        font-size: 1.5rem;
+    }
+    .App main .products ul li {
+        margin-right: 100px;
+    }
+    .App main .products ul li .productImg, .App main .products ul li .productsInfo{
+        width: 400px;
+        height: 280px;
+        border: 2px solid #E0E0E0;
+    }
+    .App main .products ul li .productImg{
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .App main .products ul li .productImg img{
+        width: 80%;
+        height: 80%;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+    .App main .cart .purchases span:nth-child(1) .newProduct .productsSeparate .remove button{
         font-size: 1.5rem;
     }
 }
