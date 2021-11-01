@@ -1,0 +1,177 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    background-color: white;
+}
+.App{
+    width: 100%;
+}
+.blackBar{
+    width: 100%;
+    height: 20px;
+    background-color: black;
+}
+.App header{
+    width: 100%;
+    margin: auto;
+    background-color: #F5F5F5;
+}
+.App header .content{
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.burguer{
+    font-size: 2rem;
+}
+.kenzie{
+    font-size: 1.2rem;
+    color: #E60000;
+    font-weight: lighter;
+}
+main{
+    width: 75%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.App main .products{
+    width: 70%;
+}
+.App main .cart{
+    width: 350px;
+    border-radius: 5px;
+}
+.App main .cart .title{
+    font-size: 0.8rem;
+    color: white;
+    background-color: #27AE60;
+    padding: 5px; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.App .content .searchBox input{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #E0E0E0;
+}
+.App .content .searchBox input::placeholder{
+    color: #E0E0E0;
+    font-weight: 400;
+}
+/* .App .content .searchBox button{
+    position: relative;
+    right: 75px;
+    color: white;
+    background-color: #27AE60;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
+
+@media (max-width: 750px){
+    .App{
+        width: 750px;
+        height: 100vh;
+    }
+    .App header{
+        width: 750px;
+    }
+    .App header .content{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 10px 0px;
+    }
+    /* .App header .content .searchBox{
+        padding-top: 10px;
+        margin-left: 70px;
+    } */
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .App main .cart{
+        width: 100%;
+    }  
+    .App main .products{
+        width: 100%;
+    }
+    .App main .products ul{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .App main .products{
+        width: 100%;
+    }
+}
+@media (max-width: 550px){
+    .App main .cart{
+        width: 100%;
+    }
+    .App header .content{
+        width: 80%;
+    }
+    /* .App header .content .searchBox button{
+        position: relative;
+        right: 130px;
+    } */
+    .App header .content .searchBox input{
+        width: 300px;
+    }
+    .App main .products{
+        width: 100%;
+    }
+    .App main .products ul{
+        width: 100%;
+    }
+    .App main .products ul li{
+        width: 400px;
+    }
+    .App main .cart .purchases .totalPrice .total, .App main .cart .purchases .totalPrice .finalPrice, .App main .cart .purchases .buttonRemoveAll button{
+        font-size: 2rem;
+    }
+    .App main .products ul li .productTitle p{
+        font-size: 2rem;
+    }
+    .App main .products ul li .productsInfo .productCategory p, .App main .products ul li .productsInfo .productPrice p, .App main .products ul li .productsInfo button {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 400px){
+    .App header .content .shopTitle h1 .burguer{
+        font-size: 3rem;
+    }
+    .App main .cart, .App main .products{
+        width: 100%;
+    }
+    .App main .cart .purchases .totalPrice .total, .App main .cart .purchases .totalPrice .finalPrice, .App main .cart .purchases .buttonRemoveAll button{
+        font-size: 2rem;
+    }
+    .App main .products ul li .productTitle p{
+        font-size: 2rem;
+    }
+    .App main .products ul li .productsInfo .productCategory p, .App main .products ul li .productsInfo .productPrice p, .App main .products ul li .productsInfo button {
+        font-size: 1.5rem;
+    }
+}

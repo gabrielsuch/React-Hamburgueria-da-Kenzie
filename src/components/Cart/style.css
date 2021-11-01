@@ -1,0 +1,85 @@
+.purchases{
+    background-color: #F5F5F5;
+}
+.cart .purchases span{
+    display: flex;
+    flex-direction: column;
+}
+.cart .purchases span:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+}
+.cart .purchases span:nth-child(1) .productImg{
+    width: 100px;
+    height: 100px;
+    background-color: #E0E0E0;
+    margin: 5px;
+    border-radius: 5px;
+}
+.cart .purchases span:nth-child(1) .productImg img{
+    width: 100px;
+}
+.cart .purchases span:nth-child(1) .newProduct{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.cart .purchases span:nth-child(1) .newProduct .productsInfo{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.cart .purchases span:nth-child(1) .newProduct .productsInfo .productTitle{
+    color: #333333;
+    font-weight: bold;
+}
+.cart .purchases span:nth-child(1) .newProduct .productsInfo .productCategory{
+    margin-top: 15px;
+    color: #333333;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.cart .purchases span:nth-child(1) .newProduct .remove{
+    margin-top: 15px;
+    margin-right: 5px;
+    color: #333333;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+.cart .purchases span:nth-child(1) .newProduct .remove button{
+    cursor: pointer;
+}
+.cart .purchases span:nth-child(1) .newProduct .productsSeparate{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cart .purchases .totalPrice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 5px;
+    border-top: 3px solid #E0E0E0;
+    width: 95%;
+    margin: auto;
+}
+.cart .purchases .totalPrice .finalPrice{
+    color: #333333;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.cart .purchases .buttonRemoveAll button{
+    color: #333333;
+    font-weight: 600;
+    width: 95%;
+    margin: auto;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 10px;
+    background-color: #E0E0E0;
+    cursor: pointer;
+}
+.cart .purchases .buttonRemoveAll{
+    padding: 10px 0px;
+}
