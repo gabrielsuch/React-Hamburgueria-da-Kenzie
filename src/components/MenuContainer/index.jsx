@@ -1,10 +1,10 @@
 import "./style.css"
 import Product from "../Product"
 
-const MenuContainer = ({products, handleClick, userInput}) => {
+const MenuContainer = ({products, handleClick, newUserInput}) => {
     
     const filtragem = products.filter((item) => {
-        return item.category.startsWith(userInput)
+        return item.category.toLowerCase().startsWith(newUserInput)
     })
 
     return (

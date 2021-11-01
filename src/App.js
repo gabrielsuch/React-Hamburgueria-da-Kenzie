@@ -21,6 +21,8 @@ function App() {
   const [cartTotal, setCartTotal] = useState(0)
   const [userInput, setUserInput] = useState("")
 
+  const newUserInput = userInput.toLowerCase()
+
   const handleClick = (productId) => {
     products.map((item) => {
       if(productId === item.id)
@@ -56,7 +58,7 @@ function App() {
 
       <main>
         <div className="products">
-          <MenuContainer products={products} handleClick={handleClick} userInput={userInput}/>
+          <MenuContainer products={products} handleClick={handleClick} newUserInput={newUserInput}/>
         </div>
         <div className="cart">
           <div className="title">
